@@ -36,11 +36,18 @@ You can see the slideshow in action over at <a href="http://pervelde.idrift.no/"
 where you want the slideshow.
 6. Update your feature image for the posts that will be displayed.
 
+Remember to update your feature post image for all the posts when after customizing the slideshow (changing number of posts or width).
+
 == Frequently Asked Questions ==
 
 = The pictures in the slideshow aren't cropped right? =
 
 You have to update your feature image for the affected posts.
+
+== Screenshots ==
+
+1. Example of Feature Slideshow
+2. Admin area
 
 == Changelog ==
 
