@@ -10,15 +10,17 @@ Retrives posts / pages and creates a jQuery driven slideshow, with a vertical li
 
 == Description ==
 
-Feature Slideshow retrives posts / pages based on user settings. It creates a list 
-of the posts with a title and a short excerpt. Beside the list it creates a slideshow, pulling out the post 
-feature image and placing the excerpt over it.
+Retrives posts / pages and creates a jQuery driven slideshow (using the post feature images), with a vertical list of post titles and a short excerpt.
 
-You can place the slideshow in any post / page by entering the shortcode "[feature-slideshow]", or in the 
-code by entering "feature_slideshow_init()" (without the double quotes offcourse).
+**Key features:**
 
-When installing the slideshow, or making changes to the width or number of posts to show, make sure you update 
-your feature image for the affected posts.
+* Customize the slideshow. Choose size of the slideshow, number of posts and specify categories, tags etc. With a small understanding of CSS you can even create your own themes.
+
+* Posts are automatically added to the slideshow, if they are amoung the target posts.
+
+* Posts feature image will automatically be used for the slideshow.
+
+
 
 This Slideshow is based on the Feature List by <a href="http://jqueryglobe.com/">jQueryGlobe</a>.
 
