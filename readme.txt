@@ -20,7 +20,9 @@ code by entering "feature_slideshow_init()" (without the double quotes offcourse
 When installing the slideshow, or making changes to the width or number of posts to show, make sure you update 
 your feature image for the affected posts.
 
-This Slideshow is based on the Feature List by jQueryGlobe ( http://jqueryglobe.com/ ).
+This Slideshow is based on the Feature List by <a href="http://jqueryglobe.com/">jQueryGlobe</a>.
+
+You can see the slideshow in action over at <a href="http://pervelde.idrift.no/">Per Veldes website</a>.
 
 == Installation ==
 
