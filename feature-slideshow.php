@@ -48,7 +48,7 @@ register_activation_hook( __FILE__,'feature_slideshow_install' );
 register_deactivation_hook( __FILE__,'feature_slideshow_remove' );
 
 // Add shortcode
-add_shortcode( 'feature-slideshow', 'feature_slideshow_init' );
+add_shortcode( 'feature-slideshow', 'feature_slideshow' );
 
 // Add admin menu
 function feature_slideshow_admin() {
@@ -118,7 +118,7 @@ function feature_slideshow_add_header() {
 }
 
 // Initialize the plugin
-function feature_slideshow_init() {
+function feature_slideshow() {
 	
 	// Function to get a short, custom excerpt
 	function feature_slideshow_excerpt($limit) {
@@ -142,7 +142,7 @@ function feature_slideshow_init() {
 	
 	
 	
-	$numerposts 	= 	$feature_slideshow_settings['numberpost'];
+	$numerposts 	= 	$feature_slideshow_settings['numberposts'];
 	$orderby 		= 	$feature_slideshow_settings['orderby'];
 	$post_parent 	= 	$feature_slideshow_settings['post_parent'];
 	$post_type 		= 	$feature_slideshow_settings['post_type'];
@@ -152,6 +152,11 @@ function feature_slideshow_init() {
 	include('feature_slideshow_body.php');
 	
 	return $return;
+
+}
+
+function feature_slideshow_init() {
+	echo feature_slideshow();
 }
 
 ?>

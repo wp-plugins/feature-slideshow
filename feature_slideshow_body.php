@@ -34,7 +34,7 @@
                                     foreach($posts as $post):
                                         setup_postdata($post);
 										
-										if( has_post_thumbnail ) {
+										if( has_post_thumbnail() ) {
 											$thumb = wp_get_attachment_url( get_post_meta( $post->ID, '_thumbnail_id', true ) );
 											$image = '<img src="' . $feature_slideshow_dir . 'timthumb.php?src=' . $thumb . '&h=' . $fs_height . '&w=' . $fs_width . '&zc=1" alt="" />';
 										}
