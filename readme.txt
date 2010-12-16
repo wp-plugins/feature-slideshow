@@ -44,7 +44,7 @@ You can see the slideshow in action over at <a href="http://pervelde.idrift.no/"
 
 4. Make sure all posts that will be displayed in the slideshow has a feature image
 
-5. Place the <code>[feature-slideshow]</code> shortcode in a post / page, or put <code>feature_slideshow_init()</code> in your code, 
+5. Place the <code>[feature-slideshow]</code> shortcode in a post / page, or put <code>feature_slideshow_init();</code> in your code, 
 where you want the slideshow.
 
 == Frequently Asked Questions ==
@@ -68,6 +68,8 @@ You can create a new theme simply by creating a new folder within the <code>them
 * Automatic cropping of images in the slideshow
 
 * Option in adminpanel for setting transition interval
+
+* <code>feature_slideshow_init();<code> bug fixed
 
 = 1.0.1 =
 * First release of the Feature Slideshow plugin.
