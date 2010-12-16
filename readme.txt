@@ -2,9 +2,9 @@
 Contributors: Bakke
 Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
-Requires at least: 2.9
+Requires at least: 2.7
 Tested up to: 3.0.3
-Stable tag: 1.0.1-beta 
+Stable tag: 1.0.2-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
@@ -25,6 +25,8 @@ Retrives posts / pages and creates a jQuery driven slideshow (using the post fea
 
 * Posts feature image will automatically be used for the slideshow.
 
+* Automatic scaling and cropping of images
+
 
 
 This Slideshow is based on the Feature List by <a href="http://jqueryglobe.com/">jQueryGlobe</a>.
@@ -35,22 +37,20 @@ You can see the slideshow in action over at <a href="http://pervelde.idrift.no/"
 
 
 1. Copy the <code>feature-slideshow</code> folder and all its contents to the <code>/wp-content/plugins/</code> directory
-3. Activate the plugin through the 'Plugins' menu in WordPress.
-4. Set your desired settings under 'Settings' --> 'Feature Slideshow'
+
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+
+3. Set your desired settings under 'Settings' --> 'Feature Slideshow'
+
+4. Make sure all posts that will be displayed in the slideshow has a feature image
+
 5. Place the <code>[feature-slideshow]</code> shortcode in a post / page, or put <code>feature_slideshow_init()</code> in your code, 
 where you want the slideshow.
-6. Update your feature images for the posts that will be displayed.
-
-**Important:** Remember to update your feature post images for all the affected posts after customizing the slideshow (changing number of posts or width).
 
 == Frequently Asked Questions ==
 
 If you can't find your answer here, please post your question <a href="http://sleek.no/kunder/138">here</a>.
-
-
-= The pictures in the slideshow aren't cropped right? =
-
-You have to update your feature image for the affected posts. 
+ 
 
 = How can i customize the slideshow? =
 
@@ -63,6 +63,11 @@ You can create a new theme simply by creating a new folder within the <code>them
 
 == Changelog ==
 
+= 1.0.2 =
 
-= 0.5 =
+* Automatic cropping of images in the slideshow
+
+* Option in adminpanel for setting transition interval
+
+= 1.0.1 =
 * First release of the Feature Slideshow plugin.

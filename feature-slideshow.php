@@ -32,7 +32,6 @@ if( !current_theme_supports( 'post-thumbnails' ) ) {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( $feature_slideshow_settings['width'] - 287, ($feature_slideshow_settings['numberposts'] * 81) - 1, true );
 }
-add_image_size( 'feature_slideshow_image', $feature_slideshow_settings['width'] - 287, ($feature_slideshow_settings['numberposts'] * 81) - 1, true );
 
 // Add jQury scripts
 	wp_deregister_script( 'jquery' );
@@ -66,15 +65,17 @@ add_action( 'admin_menu', 'feature_slideshow_admin_actions' );
 function feature_slideshow_install() {
 	
 	$feature_slideshow_settings = array(
-			'width'				=>		'600',
-			'numberposts'		=>		'4',
-			'orderby'			=>		'',
-			'post_parent'		=>		'',
-			'post_type'			=>		'post',
-			'category'			=>		'',
-			'tag'				=>		'',
-			'theme'				=>		'default_dark',
-			'p_size'			=>		'18'
+			'width'					=>		'600',
+			'numberposts'			=>		'4',
+			'orderby'				=>		'',
+			'post_parent'			=>		'',
+			'post_type'				=>		'post',
+			'category'				=>		'',
+			'tag'					=>		'',
+			'theme'					=>		'default_dark',
+			'p_size'				=>		'18',
+			'transition_interval'	=>		'5000'
+			
 	);
 	
 	add_option( 'feature_slideshow_settings', $feature_slideshow_settings );
@@ -94,6 +95,7 @@ function feature_slideshow_add_header() {
 		GLOBAL $feature_slideshow_image_width;
 		GLOBAL $feature_slideshow_p_width;
 		GLOBAL $feature_slideshow_p_size;
+		GLOBAL $feature_slideshow_settings;
 	
 		echo '	<link rel="stylesheet" href="' . $feature_slideshow_theme_path . '?width=' . $feature_slideshow_width . '&height=' . $feature_slideshow_height . '&imagewidth=' . $feature_slideshow_image_width . '&pwidth=' . $feature_slideshow_p_width . '&psize=' . $feature_slideshow_p_size . '" type="text/css" media="all" />
 				<script type="text/javascript" src="' . $feature_slideshow_dir . 'jquery.featureList-1.0.0.js"></script>';
@@ -106,7 +108,7 @@ function feature_slideshow_add_header() {
 					$("#tabs li a"),
 					$("#output li"), {
 						start_item : 0,
-						transition_interval : 5000,
+						transition_interval : ' . $feature_slideshow_settings['transition_interval'] . '000,
 						pause_on_hover : true
 					}
 				);
@@ -136,6 +138,7 @@ function feature_slideshow_init() {
 	
 	// Fetch settings
 	global $feature_slideshow_settings;
+	global $feature_slideshow_dir;
 	
 	
 	

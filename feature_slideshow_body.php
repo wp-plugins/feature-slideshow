@@ -2,6 +2,9 @@
 	                <div id="feature-slideshow">
                     
                     	<ul id="tabs">';
+						
+								$fs_height = ($feature_slideshow_settings['numberposts'] * 81) - 1;
+								$fs_width = $feature_slideshow_settings['width'] - 287;
                     
 								$posts = get_posts("numerposts=" . $numerposts . "&orderby=" . $orderby . "&post_parent=" . $post_parent . "&post_type=" . $post_type . "&category=" . $category . "&tag=" . $tag);
                                 
@@ -32,11 +35,12 @@
                                         setup_postdata($post);
 										
 										if( has_post_thumbnail ) {
-											$thumb = get_the_post_thumbnail( $post->ID, "feature_slideshow_image" );
+											$thumb = wp_get_attachment_url( get_post_meta( $post->ID, '_thumbnail_id', true ) );
+											$image = '<img src="' . $feature_slideshow_dir . 'timthumb.php?src=' . $thumb . '&h=' . $fs_height . '&w=' . $fs_width . '&zc=1" alt="" />';
 										}
                                 
                                         $return .= '<li>
-                                            <a href="' . get_permalink($post->ID) . '">' . $thumb . '</a>
+                                            <a href="' . get_permalink($post->ID) . '">' . $image . '</a>
                                             <p>' . feature_slideshow_excerpt(10) . '</p>
                                         </li>';
                                        

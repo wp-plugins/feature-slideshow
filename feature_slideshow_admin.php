@@ -14,15 +14,17 @@
 		
 		$settings = get_option('feature_slideshow_settings');
 		
-		$settings['width'] 			= 	$_POST['fs_width'];
-		$settings['theme'] 			= 	$_POST['fs_theme'];
-		$settings['numberposts']	= 	$_POST['fs_numberposts'];
-		$settings['orderby'] 		= 	$_POST['fs_orderby'];
-		$settings['post_parent'] 	= 	$_POST['fs_post_parent'];
-		$settings['post_type'] 		= 	$_POST['fs_post_type'];
-		$settings['category'] 		= 	$_POST['fs_category'];
-		$settings['tag'] 			= 	$_POST['fs_tag'];
-		$settings['p_size'] 		= 	$_POST['fs_p_size'];
+		$settings['width'] 					= 	$_POST['fs_width'];
+		$settings['theme'] 					= 	$_POST['fs_theme'];
+		$settings['numberposts']			= 	$_POST['fs_numberposts'];
+		$settings['orderby'] 				= 	$_POST['fs_orderby'];
+		$settings['post_parent'] 			= 	$_POST['fs_post_parent'];
+		$settings['post_type'] 				= 	$_POST['fs_post_type'];
+		$settings['category'] 				= 	$_POST['fs_category'];
+		$settings['tag'] 					= 	$_POST['fs_tag'];
+		$settings['p_size'] 				= 	$_POST['fs_p_size'];
+		$settings['transition_interval'] 	= 	$_POST['fs_transition_interval'];
+		
 		
 		update_option('feature_slideshow_settings', $settings);
 		
@@ -117,6 +119,11 @@
                     <tr valign="top">
                         <th scope="row"><?php _e('Overlay text size: '); ?></th>
                         <td><input type="text" name="fs_p_size" value="<?php echo $settings['p_size']; ?>" /><span class="description"> Size of overlay text in px</span></td>
+                    </tr>
+                    
+                    <tr valign="top">
+                        <th scope="row"><?php _e('Transition interval: '); ?></th>
+                        <td><input type="text" name="fs_transition_interval" value="<?php echo $settings['transition_interval']; ?>" /><span class="description"> Time between slide change in seconds</span></td>
                     </tr>
                     
                     <tr valign="top">
