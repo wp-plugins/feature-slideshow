@@ -54,7 +54,7 @@ You have to update your feature image for the affected posts.
 
 = How can i customize the slideshow? =
 
-You can create a new theme simply by creating a new folder within the <code>themes</code> folder, and give it the name of your theme. Inside it place a stylesheet called <code>style.css</code>. To make sure you get the necessary styles, it might be a god idea to copy an existing stylesheet file from another theme, and edit it.
+You can create a new theme simply by creating a new folder within the <code>themes</code> folder, and give it the name of your theme. Inside it place a stylesheet called <code>style.css</code>. To make sure you get the necessary styles, it might be a good idea to copy an existing stylesheet file from another theme, and edit it.
 
 == Screenshots ==
 
