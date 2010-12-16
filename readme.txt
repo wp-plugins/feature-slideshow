@@ -50,7 +50,7 @@ If you can't find your answer here, please post your question <a href="http://sl
 
 = The pictures in the slideshow aren't cropped right? =
 
-You have to update your feature image for the affected posts.
+You have to update your feature image for the affected posts. 
 
 = How can i customize the slideshow? =
 
