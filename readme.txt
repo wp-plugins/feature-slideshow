@@ -69,7 +69,7 @@ You can create a new theme simply by creating a new folder within the <code>them
 
 * Option in adminpanel for setting transition interval
 
-* <code>feature_slideshow_init();<code> bug fixed
+* <code>feature_slideshow_init();</code> bug fixed
 
 = 1.0.1 =
 * First release of the Feature Slideshow plugin.
