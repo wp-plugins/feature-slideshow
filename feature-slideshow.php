@@ -3,7 +3,7 @@
 Plugin Name: Feature Slideshow
 Plugin URI: http://sleek.no/kunder/138/
 Description: Based on Feature List by jQueryGlobe. Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt. Choose which posts and style the slideshow from the adminpanel.
-Version: 1.0.1-beta
+Version: 1.0.2-beta
 Author: Magnus Hauge Bakke
 Author URI: http://sleek.no/
 */
