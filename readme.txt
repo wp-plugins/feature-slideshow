@@ -2,7 +2,7 @@
 Contributors: Bakke
 Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
-Requires at least: 2.7
+Requires at least: 2.9
 Tested up to: 3.0.3
 Stable tag: 1.0.1-beta 
 
