@@ -41,7 +41,7 @@ You can see the slideshow in action over at <a href="http://pervelde.idrift.no/"
 where you want the slideshow.
 6. Update your feature images for the posts that will be displayed.
 
-Remember to update your feature post images for all the affected posts after customizing the slideshow (changing number of posts or width).
+**Important:** Remember to update your feature post images for all the affected posts after customizing the slideshow (changing number of posts or width).
 
 == Frequently Asked Questions ==
 
