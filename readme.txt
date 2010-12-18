@@ -4,7 +4,7 @@ Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
 Requires at least: 2.7
 Tested up to: 3.0.3
-Stable tag: 1.0.2-beta 
+Stable tag: 1.0.3-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
