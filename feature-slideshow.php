@@ -86,6 +86,22 @@ function feature_slideshow_remove() {
 	delete_option('feature_slideshow_settings');
 }
 
+// Function to get a short, custom excerpt
+function feature_slideshow_excerpt($limit) {
+	
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	if (count($excerpt)>=$limit) {
+		array_pop($excerpt);
+		$excerpt = implode(" ",$excerpt).'...';
+	} else {
+		$excerpt = implode(" ",$excerpt);
+	} 
+		
+	$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+	return $excerpt;
+
+}
+
 function feature_slideshow_add_header() {
 	
 		GLOBAL $feature_slideshow_theme_path;
@@ -120,38 +136,28 @@ function feature_slideshow_add_header() {
 // Initialize the plugin
 function feature_slideshow() {
 	
-	// Function to get a short, custom excerpt
-	function feature_slideshow_excerpt($limit) {
+	if( !defined( 'FS_IS_RUNNING' ) ) {
 		
-		$excerpt = explode(' ', get_the_excerpt(), $limit);
-		if (count($excerpt)>=$limit) {
-			array_pop($excerpt);
-			$excerpt = implode(" ",$excerpt).'...';
-		} else {
-			$excerpt = implode(" ",$excerpt);
-		} 
-			
-		$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
-		return $excerpt;
+		define( 'FS_IS_RUNNING', true );
+		
+		// Fetch settings
+		global $feature_slideshow_settings;
+		global $feature_slideshow_dir;
+		
+		
+		
+		$numerposts 	= 	$feature_slideshow_settings['numberposts'];
+		$orderby 		= 	$feature_slideshow_settings['orderby'];
+		$post_parent 	= 	$feature_slideshow_settings['post_parent'];
+		$post_type 		= 	$feature_slideshow_settings['post_type'];
+		$category 		= 	$feature_slideshow_settings['category'];
+		$tag 			= 	$feature_slideshow_settings['tag'];	
+		
+		include('feature_slideshow_body.php');
+		
+		return $return;
 		
 	}
-	
-	// Fetch settings
-	global $feature_slideshow_settings;
-	global $feature_slideshow_dir;
-	
-	
-	
-	$numerposts 	= 	$feature_slideshow_settings['numberposts'];
-	$orderby 		= 	$feature_slideshow_settings['orderby'];
-	$post_parent 	= 	$feature_slideshow_settings['post_parent'];
-	$post_type 		= 	$feature_slideshow_settings['post_type'];
-	$category 		= 	$feature_slideshow_settings['category'];
-	$tag 			= 	$feature_slideshow_settings['tag'];	
-	
-	include('feature_slideshow_body.php');
-	
-	return $return;
 
 }
 
