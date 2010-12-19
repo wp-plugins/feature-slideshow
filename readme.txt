@@ -4,7 +4,7 @@ Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
 Requires at least: 2.7
 Tested up to: 3.0.3
-Stable tag: 1.0.3-beta 
+Stable tag: 1.0.4-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
@@ -62,6 +62,10 @@ You can create a new theme simply by creating a new folder within the <code>them
 2. Admin area
 
 == Changelog ==
+
+= 1.0.4 =
+
+* Fixed jQuery conlict in adminpanel.
 
 = 1.0.2 =
 
