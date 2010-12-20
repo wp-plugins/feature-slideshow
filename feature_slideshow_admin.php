@@ -90,17 +90,17 @@
         ?>
         
         <script>
-			$(document).ready( function() {
-				$('#feature_advanced_settings').hide();
+			jQuery(document).ready( function() {
+				jQuery('#feature_advanced_settings').hide();
 				
-				$('#show_advanced').click( function() {
-					$('#feature_advanced_settings').toggle('slow');
-					$('#show_advanced').toggle();
+				jQuery('#show_advanced').click( function() {
+					jQuery('#feature_advanced_settings').toggle('slow');
+					jQuery('#show_advanced').toggle();
 				});
 				
-				$('#hide_advanced').click( function() {
-					$('#feature_advanced_settings').toggle('slow');
-					$('#show_advanced').toggle();
+				jQuery('#hide_advanced').click( function() {
+					jQuery('#feature_advanced_settings').toggle('slow');
+					jQuery('#show_advanced').toggle();
 				});
 			});
 		</script>

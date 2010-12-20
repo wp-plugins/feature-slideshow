@@ -4,7 +4,7 @@ Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
 Requires at least: 2.7
 Tested up to: 3.0.3
-Stable tag: 1.0.4-beta 
+Stable tag: 1.0.5-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
@@ -54,7 +54,7 @@ If you can't find your answer here, please post your question <a href="http://sl
 
 = How can i customize the slideshow? =
 
-You can create a new theme simply by creating a new folder within the <code>themes</code> folder, and give it the name of your theme. Inside it place a stylesheet called <code>style.css</code>. To make sure you get the necessary styles, it might be a good idea to copy an existing stylesheet file from another theme, and edit it.
+You can create a new theme simply by creating a new folder within the <code>themes</code> folder, and give it the name of your theme. Inside it place a dynamic stylesheet called <code>style.php</code>. To make sure you get the necessary styles, it might be a good idea to copy an existing stylesheet file from another theme, and edit it.
 
 == Screenshots ==
 
@@ -63,7 +63,7 @@ You can create a new theme simply by creating a new folder within the <code>them
 
 == Changelog ==
 
-= 1.0.4 =
+= 1.0.5 =
 
 * Fixed jQuery conlict in adminpanel.
 
