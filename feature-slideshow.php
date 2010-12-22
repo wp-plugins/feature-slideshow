@@ -3,7 +3,7 @@
 Plugin Name: Feature Slideshow
 Plugin URI: http://sleek.no/kunder/138/
 Description: Based on Feature List by jQueryGlobe. Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt. Choose which posts and style the slideshow from the adminpanel.
-Version: 1.0.5-beta
+Version: 1.0.6-beta
 Author: Magnus Hauge Bakke
 Author URI: http://sleek.no/
 */
@@ -80,7 +80,7 @@ function feature_slideshow_install() {
 			'tag'					=>		'',
 			'theme'					=>		'default_dark',
 			'p_size'				=>		'18',
-			'transition_interval'	=>		'5000'
+			'transition_interval'	=>		'5'
 			
 	);
 	
@@ -127,8 +127,8 @@ function feature_slideshow_add_header() {
 			$(document).ready(function() {
 				
 				$.featureList(
-					$("#tabs li a"),
-					$("#output li"), {
+					$("#feature-slideshow-container #tabs li a"),
+					$("#feature-slideshow-container #output li"), {
 						start_item : 0,
 						transition_interval : ' . $feature_slideshow_settings['transition_interval'] . '000,
 						pause_on_hover : true
@@ -141,10 +141,6 @@ function feature_slideshow_add_header() {
 
 // Initialize the plugin
 function feature_slideshow() {
-	
-	if( !defined( 'FS_IS_RUNNING' ) ) {
-		
-		define( 'FS_IS_RUNNING', true );
 		
 		// Fetch settings
 		global $feature_slideshow_settings;
@@ -152,7 +148,7 @@ function feature_slideshow() {
 		
 		
 		
-		$numerposts 	= 	$feature_slideshow_settings['numberposts'];
+		$numberposts 	= 	$feature_slideshow_settings['numberposts'];
 		$orderby 		= 	$feature_slideshow_settings['orderby'];
 		$post_parent 	= 	$feature_slideshow_settings['post_parent'];
 		$post_type 		= 	$feature_slideshow_settings['post_type'];
@@ -163,8 +159,6 @@ function feature_slideshow() {
 		
 		return $return;
 		
-	}
-
 }
 
 function feature_slideshow_init() {

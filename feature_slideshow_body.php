@@ -6,7 +6,7 @@
 								$fs_height = ($feature_slideshow_settings['numberposts'] * 81) - 1;
 								$fs_width = $feature_slideshow_settings['width'] - 287;
                     
-								$posts = get_posts("numerposts=" . $numerposts . "&orderby=" . $orderby . "&post_parent=" . $post_parent . "&post_type=" . $post_type . "&category=" . $category . "&tag=" . $tag);
+								$posts = get_posts("numberposts=" . $numberposts . "&orderby=" . $orderby . "&post_parent=" . $post_parent . "&post_type=" . $post_type . "&category=" . $category . "&tag=" . $tag);
                                 
                                 if($posts) {
                                     foreach($posts as $post):
@@ -21,6 +21,7 @@
                                        
 									endforeach;
                                 }
+								
                             
                             
                         
@@ -28,7 +29,7 @@
                         
                         <ul id="output">';
                     
-                                $posts = get_posts("numerposts=" . $numerposts . "&orderby=" . $orderby . "&post_parent=" . $post_parent . "&post_type=" . $post_type . "&category=" . $category . "&tag=" . $tag);
+                                $posts = get_posts("numberposts=" . $numberposts . "&orderby=" . $orderby . "&post_parent=" . $post_parent . "&post_type=" . $post_type . "&category=" . $category . "&tag=" . $tag);
                                 
                                 if($posts) {
                                     foreach($posts as $post):
@@ -46,6 +47,7 @@
                                        
 									endforeach;
                                 }
+								
                         
                         $return .= '</ul>
                         
