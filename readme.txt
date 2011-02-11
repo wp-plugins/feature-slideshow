@@ -66,11 +66,11 @@ This is a jQuery crash that usually occur due to the current theme (or some othe
 1. Example of Feature Slideshow
 2. Admin area
 
+== Changelog ==
+
 = 1.0.8 =
 
 * Preg_match error from 1.0.7-beta fixed
-
-== Changelog ==
 
 = 1.0.7 =
 
