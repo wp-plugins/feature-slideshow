@@ -4,7 +4,7 @@ Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, frontpage
 Requires at least: 3.0
 Tested up to: 3.0.5
-Stable tag: 1.0.7-beta 
+Stable tag: 1.0.8-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
@@ -53,6 +53,9 @@ where you want the slideshow.
 
 If you can't find your answer here, please post your question <a href="http://sleek.no/kunder/138">here</a>.
  
+= The slideshow is going super fast after update =
+
+At update to 1.0.7-beta I changed the intervals from seconds to milliseconds, for better control. Just change your interval time to milliseconds.
 
 = The slideshow stops at the second slide =
 
@@ -63,6 +66,10 @@ This is a jQuery crash that usually occur due to the current theme (or some othe
 1. Example of Feature Slideshow
 2. Admin area
 
+= 1.0.8 =
+
+* Preg_match error from 1.0.7-beta fixed
+
 == Changelog ==
 
 = 1.0.7 =
@@ -70,6 +77,7 @@ This is a jQuery crash that usually occur due to the current theme (or some othe
 * Metaboxes added
 * New option to change color of titles
 * jQuery put in noconflict-mode
+* Intervals is changed to milliseconds, rather than seconds
 
 = 1.0.5 =
 
