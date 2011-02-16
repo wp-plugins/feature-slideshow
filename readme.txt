@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: Bakke
 Donate link: http://sleek.no
-Tags: featured, feature, slideshow, jquery, posts, frontpage
+Tags: featured, feature, slideshow, jquery, posts, post, page, frontpage, image, images, homepage
 Requires at least: 3.0
 Tested up to: 3.0.5
 Stable tag: 1.0.8-beta 
