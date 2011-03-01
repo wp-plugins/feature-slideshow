@@ -51,7 +51,7 @@ where you want the slideshow.
 
 == Frequently Asked Questions ==
 
-If you can't find your answer here, please post your question <a href="http://sleek.no/kunder/138">here</a>.
+If you can't find your answer here, please post your question in the forum (my website is currently not working).
  
 = The slideshow is going super fast after update =
 
