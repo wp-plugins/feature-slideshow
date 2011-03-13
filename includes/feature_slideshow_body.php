@@ -45,7 +45,7 @@
 												$overlay = '';
 											}
 										
-											$image = '<img src="' . FEATURE_SLIDESHOW_DIR . '/timthumb.php?src=' .  get_the_post_thumbnail( $post->ID, 'full' ) . '&h=' . $fs_height . '&w=' . $fs_width . '&zc=1" alt="" />';
+											$image = '<img src="' . FEATURE_SLIDESHOW_DIR . '/timthumb.php?src=' .  wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ) . '&h=' . $fs_height . '&w=' . $fs_width . '&zc=1" alt="" />';
                                 
                                         $return .= '<li>
                                             <a href="' . get_permalink($post->ID) . '">' . $image . '</a>'.

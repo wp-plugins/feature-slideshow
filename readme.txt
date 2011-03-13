@@ -4,7 +4,7 @@ Donate link: http://sleek.no
 Tags: featured, feature, slideshow, jquery, posts, post, page, frontpage, image, images, homepage
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.1.0-beta 
+Stable tag: 1.1.1-beta 
 
 Retrives posts / pages and creates a jQuery driven slideshow, with a vertical list of post titles and a short excerpt.
 
@@ -68,7 +68,7 @@ This is a jQuery crash that usually occur due to the current theme (or some othe
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.1.1 =
 
 * Fixed post_thumbnail problem
 
